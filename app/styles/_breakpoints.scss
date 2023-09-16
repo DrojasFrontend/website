@@ -1,0 +1,39 @@
+// Media query breakpoints
+// Intentionally defined as SCSS variables as CSS variables are not supported by media queries.
+// See `_css-variables.scss` for all other variables.
+
+$breakpoint-extra-small: 640px;
+$breakpoint-small: 768px;
+$breakpoint-medium: 1024px;
+$breakpoint-lg: 1280px;
+$breakpoint-2xl: 1440px;
+
+@mixin breakpoint-extra-small {
+  @media only screen and (min-width: $breakpoint-extra-small) {
+    @content;
+  }
+}
+
+@mixin breakpoint-small {
+  @media only screen and (min-width: $breakpoint-small) {
+    @content;
+  }
+}
+
+@mixin breakpoint-medium {
+  @media only screen and (min-width: $breakpoint-medium) {
+    @content;
+  }
+}
+
+@mixin breakpoint-lg {
+  @media only screen and (min-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+@mixin breakpoint-2xl {
+  @media only screen and (min-width: $breakpoint-2xl) {
+    @content;
+  }
+}

@@ -1,0 +1,15 @@
+@import "../styles/breakpoints";
+@import "../styles/mixin";
+
+:root {
+  --fz-60: 64px;
+  --fz-20: 20px;
+}
+
+.fz-60 {
+  font-size: var(--fz-60);
+}
+
+.fz-20 {
+  font-size: var(--fz-20);
+}

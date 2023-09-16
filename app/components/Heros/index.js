@@ -1,0 +1,1 @@
+import { HeroTextImage } from "./HeroTextImage";
