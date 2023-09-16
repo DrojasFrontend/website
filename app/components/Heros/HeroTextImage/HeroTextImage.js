@@ -1,7 +1,9 @@
 "use client";
-
 import Image from "next/image";
-import { Heading } from "../../../components";
+import { Heading, Button } from "../../../components";
+
+import { CTA } from "../../../components/Buttons/CTA";
+
 import className from "classnames/bind";
 import styles from "./HeroTextImage.module.scss";
 let cx = className.bind(styles);
@@ -30,6 +32,9 @@ const HeroTextImage = () => {
                 to develop skills that help me create efficient and effective
                 solutions.
               </p>
+              <CTA path="/contact" blank={true} style="default">
+                Start a new project
+              </CTA>
             </div>
             <div className={cx("img")}>
               <figure className={cx("img-circle")}>

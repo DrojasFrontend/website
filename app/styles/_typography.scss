@@ -2,14 +2,24 @@
 @import "../styles/mixin";
 
 :root {
-  --fz-60: 64px;
+  --fz-14: 14px;
+  --fz-16: 16px;
   --fz-20: 20px;
+  --fz-60: 64px;
 }
 
-.fz-60 {
-  font-size: var(--fz-60);
+.fz-14 {
+  font-size: var(--fz-14);
+}
+
+.fz-16 {
+  font-size: var(--fz-16);
 }
 
 .fz-20 {
   font-size: var(--fz-20);
+}
+
+.fz-60 {
+  font-size: var(--fz-60);
 }

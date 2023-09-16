@@ -12,3 +12,4 @@ export { Carousel } from "./Carousel";
 export { Footer } from "./Layout/Footer";
 
 export { Heading } from "./Heading";
+export { CTA } from "./Buttons/CTA";
