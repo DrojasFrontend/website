@@ -17,4 +17,5 @@ export { Carousel } from "./UI/Carousel";
 export { FontWeightSelector } from "./UI/FontWeightSelector";
 export { Heading } from "./UI/Heading";
 export { HeroTextImage } from "./UI/Heros/HeroTextImage";
+export { TextImageBlock } from "./UI/MediaBlock/TextImageBlock";
 export { ImageTextBlock } from "./UI/MediaBlock/ImageTextBlock";

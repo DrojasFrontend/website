@@ -1,1 +1,1 @@
-export { ImageTextBlock } from "./ImageTextBlock";
+export { TextImageBlock } from "./TextImageBlock";

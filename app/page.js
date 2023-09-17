@@ -1,8 +1,12 @@
 import Image from "next/image";
-import { Header, Cards, ImageTextBlock, Carousel, Footer } from "./components";
+import { Header } from "./components/Layout/Header";
+import { Footer } from "./components/Layout/Footer";
 
 import { HeroTextImage } from "./components/UI/Heros/HeroTextImage";
 import { Brands } from "./components/UI/Brands";
+import { Cards } from "./components/UI/Cards";
+import { ImageTextBlock } from "./components/UI/MediaBlock/ImageTextBlock";
+import { Carousel } from "./components/UI/Carousel";
 
 import iconMobile from "/public/icon-mobile.svg";
 import iconLightning from "/public/icon-lightning.svg";

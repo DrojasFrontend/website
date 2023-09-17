@@ -5,4 +5,4 @@ import { Carousel } from "./Carousel";
 import { FontWeightSelector } from "./FontWeightSelector";
 import { Heading } from "./Heading";
 import { HeroTextImage } from "./HeroTextImage";
-import { MediaBlock } from "./MediaBlock";
+import { TextImageBlock } from "./MediaBlock/TextImageBlock";
