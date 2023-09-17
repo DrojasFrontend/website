@@ -1,10 +1,25 @@
 :root {
-  --color-black: #000;
   // --color-black: #391245;
+  --color-black: #000;
   --color-white: #fff;
   --color-gray: #babcbd;
+  --color-gray-100: #F6F6F6;
 }
 
+/* Colors */
 .color-gray {
   color: var(--color-gray);
+}
+
+.color-gray-100 {
+  color: var(--color-gray-100);
+}
+
+/* Background */
+.bckg-gray {
+  background-color: var(--color-gray);
+}
+
+.bckg-gray-100 {
+  background-color: var(--color-gray-100);
 }
