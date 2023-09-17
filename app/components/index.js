@@ -1,15 +1,20 @@
-export { Body } from "./Body";
-export { Container } from "./Container";
-export { Header } from "./Layout/Header";
-export { Logo } from "./Logo";
-export { Navigation } from "./Navigation";
-export { Main } from "./Main";
-export { HeroTextImage } from "./Heros/HeroTextImage";
-export { Brands } from "./Brands";
-export { Cards } from "./Cards";
-export { ImageTextBlock } from "./MediaBlock/ImageTextBlock";
-export { Carousel } from "./Carousel";
-export { Footer } from "./Layout/Footer";
+//Brandins
+export { Logo } from "./Branding/Logo";
 
-export { Heading } from "./Heading";
-export { CTA } from "./Buttons/CTA";
+// Layouts
+export { Body } from "./Layout/Body";
+export { Container } from "./Layout/Container";
+export { Footer } from "./Layout/Footer";
+export { Header } from "./Layout/Header";
+export { Main } from "./Layout/Main";
+export { Navigation } from "./Layout/Navigation";
+
+// UI
+export { Brands } from "./UI/Brands";
+export { CTA } from "./UI/Buttons/CTA";
+export { Cards } from "./UI/Cards";
+export { Carousel } from "./UI/Carousel";
+export { FontWeightSelector } from "./UI/FontWeightSelector";
+export { Heading } from "./UI/Heading";
+export { HeroTextImage } from "./UI/Heros/HeroTextImage";
+export { ImageTextBlock } from "./UI/MediaBlock/ImageTextBlock";

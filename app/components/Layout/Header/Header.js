@@ -1,5 +1,7 @@
 import React from "react";
-import { Container, Logo, Navigation } from "../..";
+import { Logo } from "../../Branding/Logo";
+import { Container } from "../../Layout/Container";
+import { Navigation } from "../../Layout/Navigation";
 import className from "classnames/bind";
 import styles from "./Header.module.scss";
 let cx = className.bind(styles);

@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
-import { Heading, Button } from "../../../components";
+import { Heading, Button } from "../../..";
 
-import { CTA } from "../../../components/Buttons/CTA";
+import { CTA } from "../../Buttons/CTA";
 
 import className from "classnames/bind";
 import styles from "./HeroTextImage.module.scss";

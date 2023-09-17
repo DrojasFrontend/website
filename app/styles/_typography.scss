@@ -5,6 +5,7 @@
   --fz-14: 14px;
   --fz-16: 16px;
   --fz-20: 20px;
+  --fz-30: 30px;
   --fz-60: 64px;
 }
 
@@ -18,6 +19,10 @@
 
 .fz-20 {
   font-size: var(--fz-20);
+}
+
+.fz-30 {
+  font-size: var(--fz-30);
 }
 
 .fz-60 {
