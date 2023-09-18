@@ -1,5 +1,5 @@
 import React from "react";
-import { Sharp, SharpBold, SharpSans } from "../../../styles/fonts";
+import { Sharp, SharpBold, SharpSans } from "@/app/styles/fonts";
 
 const Heading = ({ level, children, className, font }) => {
   let fontClass;

@@ -1,12 +1,13 @@
 import Image from "next/image";
-import { Header } from "./components/Layout/Header";
-import { Footer } from "./components/Layout/Footer";
+import { Header } from "@/app/components/Layout/Header";
+import { Footer } from "@/app/components/Layout/Footer";
 
-import { HeroTextImage } from "./components/UI/Heros/HeroTextImage";
-import { Brands } from "./components/UI/Brands";
-import { Cards } from "./components/UI/Cards";
-import { ImageTextBlock } from "./components/UI/MediaBlock/ImageTextBlock";
-import { Carousel } from "./components/UI/Carousel";
+import { HeroTextImage } from "@/app/components/UI/Heros/HeroTextImage";
+import { Brands } from "@/app/components/UI/Brands";
+import { CardsDefault } from "@/app/components/UI/Cards/CardsDefault";
+import { ImageTextBlock } from "@/app/components/UI/MediaBlock/ImageTextBlock";
+import { CardProjects } from "@/app/components/UI/Cards/CardProjects";
+import { Carousel } from "@/app/components/UI/Carousel";
 
 import iconMobile from "/public/icon-mobile.svg";
 import iconLightning from "/public/icon-lightning.svg";
@@ -52,8 +53,9 @@ export default function Home() {
             Frameworks
           </p>
         </Brands>
-        <Cards />
+        <CardsDefault />
         <ImageTextBlock />
+        <CardProjects/>
         <Carousel />
       </main>
       <Footer />

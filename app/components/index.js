@@ -12,7 +12,8 @@ export { Navigation } from "./Layout/Navigation";
 // UI
 export { Brands } from "./UI/Brands";
 export { CTA } from "./UI/Buttons/CTA";
-export { Cards } from "./UI/Cards";
+export { CardsDefault } from "./UI/Cards/CardsDefault";
+export { CardProjects } from "./UI/Cards/CardProjects";
 export { Carousel } from "./UI/Carousel";
 export { FontWeightSelector } from "./UI/FontWeightSelector";
 export { Heading } from "./UI/Heading";

@@ -1,5 +1,5 @@
 "use client";
-import { Sharp } from "../../../styles/fonts";
+import { Sharp } from "@/app/styles/fonts";
 import { useRef } from "react";
 import {
   motion,

@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import className from "classnames/bind";
-import styles from "./Cards.module.scss";
+import styles from "./CardsDefault.module.scss";
 let cx = className.bind(styles);
-import { Heading, FontWeightSelector } from "../..";
-import { Container } from "../../Layout/Container";
+import { Heading } from "@/app/components/UI/Heading";
+import { FontWeightSelector } from "@/app/components/UI/FontWeightSelector";
+import { Container } from "@/app/components/Layout/Container";
 
 import iconMobile from "/public/icon-mobile.svg";
 import iconLightning from "/public/icon-lightning.svg";
@@ -18,7 +19,7 @@ const Cards = () => {
     <section className={cx("wrapper")}>
       <Container>
         <div className={cx("flex")}>
-          <Heading level="h2" font="Sharp" className="fz-30">
+          <Heading level="h2" font="Sharp" className="fz-60">
             Experience
           </Heading>
           <p>
