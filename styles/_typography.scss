@@ -5,6 +5,7 @@
   --fz-30: 30px;
   --fz-64: 64px;
   --fz-80: 80px;
+  --fz-120: 120px;
 }
 
 .fz-14 {
@@ -29,4 +30,8 @@
 
 .fz-80 {
   font-size: var(--fz-80);
+}
+
+.fz-120 {
+  font-size: var(--fz-120);
 }

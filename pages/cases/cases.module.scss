@@ -1,0 +1,59 @@
+@import "../../styles/breakpoints";
+@import "../../styles/mixin";
+
+.wrapper {
+  padding: rem(100px) 0 0 0;
+  .title {
+    margin-bottom: rem(50px);
+    padding-bottom: rem(50px);
+    border-bottom: rem(1px) solid var(--color-white);
+
+    h1 {
+      color: var(--color-white);
+    }
+  }
+}
+
+.grid {
+  display: flex;
+  flex-direction: row-reverse;
+
+  &:nth-child(2n) {
+    flex-direction: row;
+  }
+
+  .sticky {
+    position: sticky;
+    top: rem(50px);
+    color: var(--color-white);
+    width: 50%;
+    height: fit-content;
+    padding: rem(100px) rem(20px) rem(30px);
+  }
+
+  figure {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    aspect-ratio: 1/1;
+  }
+}
+
+.info {
+  .description {
+    padding: rem(10px) 0 rem(30px);
+  }
+  .project-info {
+    padding-bottom: rem(10px);
+    text-transform: uppercase;
+  }
+
+  .role,
+  .year {
+    padding-bottom: rem(10px);
+  }
+
+  a {
+    position: relative;
+  }
+}
