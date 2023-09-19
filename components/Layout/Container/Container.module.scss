@@ -1,0 +1,14 @@
+@import "../../../styles/breakpoints";
+@import "../../../styles/mixin";
+
+.component {
+  position: relative;
+  width: 100%;
+  max-width: calc(100% - rem(40px));
+  margin: 0 auto;
+  padding: 0 rem(20px);
+
+  @include breakpoint-2xl {
+    max-width: calc(100% - rem(100px));
+  }
+}

@@ -1,0 +1,19 @@
+@import "../../../styles/breakpoints";
+@import "../../../styles/mixin";
+
+.menu {
+  ul {
+    display: flex;
+    gap: rem(50px);
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    color: var(--color-white);
+  }
+}
