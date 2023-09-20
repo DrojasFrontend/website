@@ -1,16 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { Heading } from "../../components/UI/Heading";
-import { Container } from "../../components/Layout/Container";
+import { Heading } from "@/components/UI/Heading";
+import { Container } from "@/components/Layout/Container";
 
 import className from "classnames/bind";
 import styles from "./cases.module.scss";
 let cx = className.bind(styles);
 
 import picture from "/public/images/pexels-oladimeji-ajegbile-4930018.jpg";
-import { FontWeightSelector } from "../../components/UI/FontWeightSelector";
-import { CardProjects } from "../../components/UI/Cards/CardProjects";
+import { FontWeightSelector } from "@/components/UI/FontWeightSelector";
+import { CardProjects } from "@/components/UI/Cards/CardProjects";
+import { ParallaxText } from "@/components/UI/ParallaxText";
 
 const projects = [
   {
@@ -75,6 +76,12 @@ export default function Cases() {
         ))}
         <CardProjects />
       </Container>
+      <ParallaxText baseVelocity={2} bckg="">
+        <Heading level="h2" font="Sharp" className="fz-13vw color-white">
+          <div>Connect Connect</div>
+        </Heading>
+      </ParallaxText>
+      
     </section>
   );
 }

@@ -13,7 +13,6 @@ import iconFrontEnd from "/public/icon-front-end.svg";
 import iconDesktop from "/public/icon-desktop.svg";
 import iconCode from "/public/icon-code.svg";
 
-
 export default function Home() {
   return (
     <>

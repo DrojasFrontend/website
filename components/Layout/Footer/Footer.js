@@ -21,9 +21,10 @@ const Footer = () => {
           <div className={cx("top")}>
             <div className={cx("top__copy")}>
               <Heading level="h2" font="Sharp" className="fz-30">
-                Let’s talk about programming, design, or one of my hobbies like
-                football or books?
+                WANT TO SEE MORE WORKS? DISCUSS A NEW PROJECT? LET'S HAVE A
+                CHAT.
               </Heading>
+              <Link className="color-white" href="mailto:danielrojas243@gmail.com">danielrojas243@gmail.com</Link>
             </div>
             <ul>
               <li>
@@ -33,7 +34,12 @@ const Footer = () => {
                   height={23}
                   alt="iconLinkedinFooter"
                 />
-                <Link href="https://www.linkedin.com/in/daniel-rojas-astood-6a3198150/" target="_blank">Linkedin</Link>
+                <Link
+                  href="https://www.linkedin.com/in/daniel-rojas-astood-6a3198150/"
+                  target="_blank"
+                >
+                  Linkedin
+                </Link>
               </li>
               <li>
                 <Image
@@ -42,7 +48,9 @@ const Footer = () => {
                   height={21}
                   alt="iconLaptopFooter"
                 />
-                <Link href="https://github.com/DrojasFrontend" target="_blank">GitHub</Link>
+                <Link href="https://github.com/DrojasFrontend" target="_blank">
+                  GitHub
+                </Link>
               </li>
               <li>
                 <Image
@@ -51,14 +59,14 @@ const Footer = () => {
                   height={17}
                   alt="iconGithubFooter"
                 />
-                <Link href="#" target="_blank">My Work</Link>
+                <Link href="/cases">My Work</Link>
               </li>
             </ul>
           </div>
           <div className={cx("bottom")}>
-            <Logo/>
+            <Logo />
             <p className="fz-14 color-white">
-            Copyright 2023 - All rights reserved to Daniel rojas astood
+              Copyright 2023 - All rights reserved to Daniel rojas astood
             </p>
           </div>
         </Container>

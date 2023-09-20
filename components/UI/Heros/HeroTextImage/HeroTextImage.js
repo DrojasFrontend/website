@@ -1,4 +1,5 @@
 "use client";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Heading } from "@/components/UI/Heading";
 import { CTA } from "@/components/UI/Buttons/CTA";
@@ -10,7 +11,25 @@ let cx = className.bind(styles);
 import Hero from "/public/images/pexels-oladimeji-ajegbile-4930018.jpg";
 import iconHero from "/public/icon-circle-rotate.svg";
 
+import { motion } from "framer-motion";
+
 const HeroTextImage = () => {
+  const [rotation, setRotation] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const maxRotation = 600;
+      const scrollY = window.scrollY;
+      const newRotation = scrollY * (maxRotation / window.innerHeight);
+      setRotation(newRotation);
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  });
+
   return (
     <section>
       <div className={cx("wrapper")}>
@@ -36,9 +55,12 @@ const HeroTextImage = () => {
               </CTA>
             </div>
             <div className={cx("img")}>
-              <figure className={cx("img-circle")}>
+              <motion.figure
+                className={cx("img-circle")}
+                style={{ rotate: rotation }}
+              >
                 <Image src={iconHero} width={87} height={87} alt="" />
-              </figure>
+              </motion.figure>
               <figure>
                 <Image
                   src={Hero}
