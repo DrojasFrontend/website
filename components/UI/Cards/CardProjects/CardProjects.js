@@ -78,7 +78,6 @@ const projects = [
 ];
 
 const CardProjects = ({ numberCards, loadMore }) => {
-  console.log(numberCards);
   return (
     <section className={cx("wrapper")} id="cases">
       <div className={cx("container")}>
