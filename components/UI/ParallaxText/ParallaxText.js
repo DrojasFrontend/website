@@ -16,7 +16,7 @@ import className from "classnames/bind";
 import styles from "./ParallaxText.module.scss";
 let cx = className.bind(styles);
 
-const ParallaxText = ({ children, baseVelocity = 100, bckg }) => {
+export default function ParallaxText({ children, baseVelocity = 100, bckg }) {
   const baseX = useMotionValue(0);
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
@@ -56,5 +56,3 @@ const ParallaxText = ({ children, baseVelocity = 100, bckg }) => {
     </section>
   );
 };
-
-export default ParallaxText;

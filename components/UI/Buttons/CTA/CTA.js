@@ -8,8 +8,9 @@ let cx = className.bind(styles);
 const CTA = ({ style, children, className, path, blank }) => {
 
   const target = blank ? "_blank" : "";
+
   return (
-    <Link href={`mailto:${path}`} className={cx(["button", `button--${style}`, className])} target={target}>
+    <Link href={path} className={cx(["button", `button--${style}`, className])} target={target}>
       {children}
     </Link>
   );

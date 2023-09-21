@@ -46,7 +46,7 @@ export default function Home() {
       </ParallaxText>
       <CardsDefault />
       <ImageTextBlock />
-      <CardProjects />
+      <CardProjects numberCards={1} loadMore={true} />
       <Carousel />
     </>
   );

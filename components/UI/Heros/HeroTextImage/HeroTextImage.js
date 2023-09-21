@@ -51,7 +51,7 @@ const HeroTextImage = () => {
                 solutions.
               </p>
               <CTA
-                path="danielrojas243@gmail.com"
+                path="mailto:danielrojas243@gmail.com"
                 blank={false}
                 style="default"
               >

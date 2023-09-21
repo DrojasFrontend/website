@@ -17,7 +17,7 @@ const projects = [
   {
     name: "Sanna",
     path: "https://sannaofficial.com/",
-    image: "/images/pexels-oladimeji-ajegbile-4930018.jpg",
+    image: "/images/sannaofficial.png",
     role: "Front end development",
     year: "2023",
     description:
@@ -26,7 +26,34 @@ const projects = [
   {
     name: "Coop",
     path: "https://coop-development-clone.myshopify.com/",
-    image: "/images/pexels-oladimeji-ajegbile-4930018.jpg",
+    image: "/images/coop-development.png",
+    role: "Front end development",
+    year: "2020",
+    description:
+      "Coop: Elevate Your Sleep. Shop adjustable sleep essentials at coop-development for ultimate comfort in a fully customizable experience.",
+  },
+  {
+    name: "Coop",
+    path: "https://coop-development-clone.myshopify.com/",
+    image: "/images/coop-development.png",
+    role: "Front end development",
+    year: "2020",
+    description:
+      "Coop: Elevate Your Sleep. Shop adjustable sleep essentials at coop-development for ultimate comfort in a fully customizable experience.",
+  },
+  {
+    name: "Coop",
+    path: "https://coop-development-clone.myshopify.com/",
+    image: "/images/coop-development.png",
+    role: "Front end development",
+    year: "2020",
+    description:
+      "Coop: Elevate Your Sleep. Shop adjustable sleep essentials at coop-development for ultimate comfort in a fully customizable experience.",
+  },
+  {
+    name: "Coop",
+    path: "https://coop-development-clone.myshopify.com/",
+    image: "/images/coop-development.png",
     role: "Front end development",
     year: "2020",
     description:
@@ -43,7 +70,7 @@ export default function Cases() {
             Recent Projects
           </Heading>
         </div>
-        {projects.map((p, idx) => (
+        {projects.slice(0, 2).map((p, idx) => (
           <div key={idx} className={cx("grid")}>
             <div className={cx("sticky")}>
               <Heading level="h1" font="Sharp" className="fz-120">
@@ -65,16 +92,18 @@ export default function Cases() {
               <Image
                 src={p.image}
                 fill
-                sizes="100vw"
+                sizes="(min-width: 640px) 100vw, 100vw"
                 style={{
                   objectFit: "cover",
                 }}
+                quality={75}
                 alt=""
+                priority={true}
               />
             </figure>
           </div>
         ))}
-        <CardProjects />
+        <CardProjects numberCards={6} loadMore={false}/>
       </Container>
       <ParallaxText baseVelocity={2} bckg="">
         <Heading level="h2" font="Sharp" className="fz-13vw color-white">
