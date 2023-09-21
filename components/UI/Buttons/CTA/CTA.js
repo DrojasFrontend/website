@@ -9,7 +9,7 @@ const CTA = ({ style, children, className, path, blank }) => {
 
   const target = blank ? "_blank" : "";
   return (
-    <Link href={path} className={cx(["button", `button--${style}`, className])} target={target}>
+    <Link href={`mailto:${path}`} className={cx(["button", `button--${style}`, className])} target={target}>
       {children}
     </Link>
   );

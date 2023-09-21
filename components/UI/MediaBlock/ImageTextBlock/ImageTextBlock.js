@@ -15,7 +15,7 @@ import iconFrontEnd from "/public/icon-front-end.svg";
 
 const ImageTextBlock = () => {
   return (
-    <section className={cx("wrapper")}>
+    <section className={cx("wrapper")} id="about">
       <Container>
         <div className={cx("grid")}>
           <figure>

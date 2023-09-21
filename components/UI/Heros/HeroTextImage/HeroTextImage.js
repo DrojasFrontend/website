@@ -50,7 +50,11 @@ const HeroTextImage = () => {
                 to develop skills that help me create efficient and effective
                 solutions.
               </p>
-              <CTA path="/contact" blank={true} style="default">
+              <CTA
+                path="danielrojas243@gmail.com"
+                blank={false}
+                style="default"
+              >
                 Start a new project
               </CTA>
             </div>
@@ -59,13 +63,20 @@ const HeroTextImage = () => {
                 className={cx("img-circle")}
                 style={{ rotate: rotation }}
               >
-                <Image src={iconHero} width={87} height={87} alt="" />
+                <Image
+                  src={iconHero}
+                  width={87}
+                  height={87}
+                  quality={100}
+                  alt=""
+                />
               </motion.figure>
               <figure>
                 <Image
                   src={Hero}
                   fill
                   sizes="100vw"
+                  quality={100}
                   style={{
                     objectFit: "cover",
                   }}

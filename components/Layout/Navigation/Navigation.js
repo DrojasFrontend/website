@@ -11,15 +11,15 @@ const menu = [
   },
   {
     name: "About",
-    href: "/about",
+    href: "#about",
   },
   {
     name: "Cases",
-    href: "/cases",
+    href: "#cases",
   },
   {
     name: "Contact",
-    href: "/contact",
+    href: "#contact",
   },
 ];
 
