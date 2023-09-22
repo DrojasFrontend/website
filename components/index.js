@@ -4,6 +4,7 @@ export { Logo } from "./Branding/Logo";
 // Layouts
 export { Body } from "./Layout/Body";
 export { Container } from "./Layout/Container";
+export { Cursor } from "./Layout/Cursor";
 export { Footer } from "./Layout/Footer";
 export { Header } from "./Layout/Header";
 export { Main } from "./Layout/Main";
