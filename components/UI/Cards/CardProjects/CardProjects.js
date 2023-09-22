@@ -127,7 +127,7 @@ const CardProjects = ({ numberCards, loadMore }) => {
                   </p>
                 </div>
                 <div className={cx("info")}>
-                  <ParallaxText baseVelocity={-0.5} bckg="bckg-black">
+                  <ParallaxText baseVelocity={-0.5} bckg="bckg-gradient">
                     <h3 className="fz-80 color-white">{p.dominio}</h3>
                     <h3 className="fz-80 color-white">{p.dominio}</h3>
                     <h3 className="fz-80 color-white">{p.dominio}</h3>

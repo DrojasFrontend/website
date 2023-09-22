@@ -20,8 +20,6 @@ import iconDesktop from "/public/icon-desktop.svg";
 import iconCode from "/public/icon-code.svg";
 
 export default function Home({}) {
-  const [cursorVariant, setCursorVariant] = useState("default");
-
   const ref = React.useRef(null);
   const mouse = useMouse(ref, {
     enterDelay: 100,
@@ -43,7 +41,6 @@ export default function Home({}) {
     <>
       <div ref={ref}>
         <Cursor
-          cursorVariant={cursorVariant}
           mouseXPosition={mouseXPosition}
           mouseYPosition={mouseYPosition}
         />

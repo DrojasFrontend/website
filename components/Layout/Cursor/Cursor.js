@@ -1,11 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import { motion } from "framer-motion";
 
 import className from "classnames/bind";
 import styles from "./Cursor.module.scss";
 let cx = className.bind(styles);
 
-export default function Cursor({ cursorVariant, mouseXPosition, mouseYPosition }) {
+export default function Cursor({  mouseXPosition, mouseYPosition }) {
+  const [cursorVariant, setCursorVariant] = useState("default");
+
   const variants = {
     default: {
       opacity: 1,

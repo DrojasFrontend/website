@@ -6,6 +6,7 @@
   --color-gray-dark: #78797a;
   --color-gray-100: #F6F6F6;
   --color-gray-200: #f7f7f7;
+  --gradient: linear-gradient(115.6deg, #000811 -7.5%, #000E17 105.49%);
 }
 
 /* Colors */
@@ -60,4 +61,8 @@
 
 .bckg-gray-200 {
   background-color: var(--color-gray-200);
+}
+
+.bckg-gradient {
+  background: var(--gradient);
 }
