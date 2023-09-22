@@ -26,8 +26,8 @@ export default function Home({}) {
     leaveDelay: 100,
   });
 
-  let mouseXPosition = 0;
-  let mouseYPosition = 0;
+  let mouseXPosition = 100;
+  let mouseYPosition = 48;
 
   if (mouse.x !== null) {
     mouseXPosition = mouse.clientX;
@@ -36,6 +36,8 @@ export default function Home({}) {
   if (mouse.y !== null) {
     mouseYPosition = mouse.clientY;
   }
+
+  console.log(mouseXPosition, mouseYPosition)
 
   return (
     <>
@@ -46,36 +48,23 @@ export default function Home({}) {
         />
         <HeroTextImage />
         <ParallaxText baseVelocity={-1} bckg="bckg-gray-100">
-          <p>
-            <Image src={iconMobile} width={18} height={18} alt="iconMobile" />
-            Desktop
-          </p>
-          <p>
-            <Image
-              src={iconLightning}
-              width={15}
-              height={15}
-              alt="iconLightning"
-            />
-            Front end
-          </p>
-          <p>
-            <Image
-              src={iconFrontEnd}
-              width={28}
-              height={28}
-              alt="iconFrontEnd"
-            />
-            Development
-          </p>
-          <p>
-            <Image src={iconDesktop} width={23} height={23} alt="iconDesktop" />
-            Mobile
-          </p>
-          <p>
-            <Image src={iconCode} width={25} height={25} alt="iconCode" />
-            Frameworks
-          </p>
+          {[
+            { src: iconMobile, width: 18, height: 18, text: "Desktop" },
+            { src: iconLightning, width: 15, height: 15, text: "Front end" },
+            { src: iconFrontEnd, width: 28, height: 28, text: "Development" },
+            { src: iconDesktop, width: 23, height: 23, text: "Mobile" },
+            { src: iconCode, width: 25, height: 25, text: "Frameworks" },
+          ].map((item, index) => (
+            <p key={index}>
+              <Image
+                src={item.src}
+                width={item.width}
+                height={item.height}
+                alt={item.text}
+              />
+              {item.text}
+            </p>
+          ))}
         </ParallaxText>
         <CardsDefault />
         <ImageTextBlock />
