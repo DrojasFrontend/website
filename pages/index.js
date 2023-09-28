@@ -1,7 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { useState } from "react";
-import useMouse from "@react-hook/mouse-position";
+import {useMousePosition} from "@/utils/useMousePosition";
 
 import Image from "next/image";
 
@@ -20,22 +18,7 @@ import iconDesktop from "/public/icon-desktop.svg";
 import iconCode from "/public/icon-code.svg";
 
 export default function Home({}) {
-  const ref = React.useRef(null);
-  const mouse = useMouse(ref, {
-    enterDelay: 100,
-    leaveDelay: 100,
-  });
-
-  let mouseXPosition = 100;
-  let mouseYPosition = 48;
-
-  if (mouse.x !== null) {
-    mouseXPosition = mouse.clientX;
-  }
-
-  if (mouse.y !== null) {
-    mouseYPosition = mouse.clientY;
-  }
+  const { mouseXPosition, mouseYPosition, ref } = useMousePosition();
 
   return (
     <>
@@ -69,8 +52,8 @@ export default function Home({}) {
         <CardProjects
           numberCards={3}
           loadMore={true}
-          mouseXPosition={mouseXPosition}
-          mouseYPosition={mouseYPosition}
+          // mouseXPosition={mouseXPosition}
+          // mouseYPosition={mouseYPosition}
         />
         <Carousel />
       </div>
