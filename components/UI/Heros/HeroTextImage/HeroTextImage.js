@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { Heading } from "@/components/UI/Heading";
 import { CTA } from "@/components/UI/Buttons/CTA";
 
@@ -71,16 +71,14 @@ const HeroTextImage = () => {
                   alt=""
                 />
               </motion.figure>
-              <figure>
+              <figure className={cx("img-hero")}>
                 <Image
                   src={Hero}
-                  fill
-                  sizes="100vw"
-                  quality={100}
-                  style={{
-                    objectFit: "cover",
-                  }}
+                  layout="fill"
+                  objectFit="cover"
+                  quality={75}
                   alt=""
+                  priority={true}
                 />
               </figure>
             </div>

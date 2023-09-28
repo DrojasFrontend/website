@@ -37,8 +37,6 @@ export default function Home({}) {
     mouseYPosition = mouse.clientY;
   }
 
-  console.log(mouseXPosition, mouseYPosition)
-
   return (
     <>
       <div ref={ref}>
@@ -49,11 +47,11 @@ export default function Home({}) {
         <HeroTextImage />
         <ParallaxText baseVelocity={-1} bckg="bckg-gray-100">
           {[
-            { src: iconMobile, width: 18, height: 18, text: "Desktop" },
-            { src: iconLightning, width: 15, height: 15, text: "Front end" },
-            { src: iconFrontEnd, width: 28, height: 28, text: "Development" },
-            { src: iconDesktop, width: 23, height: 23, text: "Mobile" },
-            { src: iconCode, width: 25, height: 25, text: "Frameworks" },
+            { src: iconMobile, width: 18, height: 24, text: "Desktop" },
+            { src: iconLightning, width: 19, height: 26, text: "Front end" },
+            { src: iconFrontEnd, width: 30, height: 22, text: "Development" },
+            { src: iconDesktop, width: 27, height: 24, text: "Mobile" },
+            { src: iconCode, width: 30, height: 26, text: "Frameworks" },
           ].map((item, index) => (
             <p key={index}>
               <Image

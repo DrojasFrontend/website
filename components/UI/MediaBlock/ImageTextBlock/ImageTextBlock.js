@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { Container } from "@/components/Layout/Container";
 import { Heading } from "@/components/UI/Heading";
 import { FontWeightSelector } from "@/components/UI/FontWeightSelector";
@@ -21,12 +21,11 @@ const ImageTextBlock = () => {
           <figure>
             <Image
               src={DanielRojas}
-              fill
-              sizes="100vw"
-              style={{
-                objectFit: "cover",
-              }}
-              alt="Frontend"
+              layout="fill"
+              objectFit="cover"
+              quality={75}
+              alt="front end"
+              priority={true}
             />
           </figure>
           <div className={cx("copy")}>
@@ -37,23 +36,22 @@ const ImageTextBlock = () => {
             <Heading level="h3" font="Sharp" className="fz-30">
               Daniel Rojas Astood
             </Heading>
-            
+
             <p className="fz-20">
               <FontWeightSelector>Front-end Developer</FontWeightSelector>
             </p>
             <p className="color-gray-dark">
               I'm a Computer Science graduate at Simon Bolivar University in
-              Colombia, Atlantico and I've been working as a front-end
-              developer for 8 years. My experiences in the area of programming
-              made me evolve as a professional and programming became my
-              favorite hobby.
+              Colombia, Atlantico and I've been working as a front-end developer
+              for 8 years. My experiences in the area of programming made me
+              evolve as a professional and programming became my favorite hobby.
             </p>
             <ul className={cx("grid-3")}>
               <li>
                 <Image
                   src={iconLightning}
-                  width={15}
-                  height={18}
+                  width={19}
+                  height={26}
                   alt="experience"
                 />
                 <p className="fz-14">+8 years of experience</p>
@@ -61,8 +59,8 @@ const ImageTextBlock = () => {
               <li>
                 <Image
                   src={iconCode}
-                  width={18}
-                  height={18}
+                  width={32}
+                  height={34}
                   alt="perfect Pixel"
                 />
                 <p className="fz-14">Perfect Pixel Wonder</p>
@@ -70,8 +68,8 @@ const ImageTextBlock = () => {
               <li>
                 <Image
                   src={iconFrontEnd}
-                  width={18}
-                  height={28}
+                  width={30}
+                  height={22}
                   alt="Front end at One Sure"
                 />
                 <p className="fz-14">Front end at One Sure</p>

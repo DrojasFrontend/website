@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { Heading } from "@/components/UI/Heading";
 import { FontWeightSelector } from "@/components/UI/FontWeightSelector";
 import { ParallaxText } from "@/components/UI/ParallaxText";
@@ -97,11 +97,8 @@ const CardProjects = ({ numberCards, loadMore }) => {
                   <figure>
                     <Image
                       src={p.image}
-                      fill
-                      sizes="(min-width: 640px) 100vw, 100vw"
-                      style={{
-                        objectFit: "cover",
-                      }}
+                      layout="fill"
+                      objectFit="cover"
                       quality={75}
                       alt=""
                       priority={true}

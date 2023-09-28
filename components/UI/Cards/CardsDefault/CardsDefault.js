@@ -42,8 +42,8 @@ const Cards = () => {
           <div className={cx("card")}>
             <Image
               src={iconLightning}
-              width={26}
-              height={15}
+              width={19}
+              height={26}
               alt="iconLightning"
             />
             <h3 className="fz-30">
@@ -52,7 +52,7 @@ const Cards = () => {
             <p className="color-gray-dark">Familiar with various front-end frameworks and libraries.</p>
           </div>
           <div className={cx("card")}>
-            <Image src={iconCodeLg} width={32} height={28} alt="iconFrontEnd" />
+            <Image src={iconCodeLg} width={32} height={34} alt="iconFrontEnd" />
             <h3 className="fz-30">
               <FontWeightSelector>Code</FontWeightSelector>
             </h3>
@@ -68,7 +68,7 @@ const Cards = () => {
             </p>
           </div>
           <div className={cx("card")}>
-            <Image src={iconFrontEnd} width={42} height={34} alt="iconCode" />
+            <Image src={iconFrontEnd} width={30} height={22} alt="iconCode" />
             <h3 className="fz-30">
               <FontWeightSelector>Optimization</FontWeightSelector>
             </h3>
