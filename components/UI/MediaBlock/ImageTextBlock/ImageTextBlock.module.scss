@@ -14,6 +14,7 @@
 
   @include breakpoint-medium {
     grid-template-columns: 2fr 3fr;
+    height: auto;
   }
 
   @include breakpoint-lg {
@@ -39,6 +40,9 @@
 }
 
 .copy {
+  position: sticky;
+  top: rem(80px);
+  height: max-content;
   padding: rem(50px) 0;
 
   p {

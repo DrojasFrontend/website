@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { Container } from "@/components/Layout/Container";
 import { Heading } from "@/components/UI/Heading";
 import { FontWeightSelector } from "@/components/UI/FontWeightSelector";
@@ -20,12 +20,16 @@ const ImageTextBlock = () => {
         <div className={cx("grid")}>
           <figure>
             <Image
-              src={DanielRojas}
-              layout="fill"
-              objectFit="cover"
-              quality={75}
               alt="front end"
-              priority={true}
+              src={DanielRojas}
+              width={1000}
+              height={1000}
+              quality={95}
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+                objectFit: "cover",
+              }}
             />
           </figure>
           <div className={cx("copy")}>

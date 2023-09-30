@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { Heading } from "@/components/UI/Heading";
 import { CTA } from "@/components/UI/Buttons/CTA";
 
@@ -74,11 +74,16 @@ const HeroTextImage = () => {
               <figure className={cx("img-hero")}>
                 <Image
                   src={Hero}
-                  layout="fill"
-                  objectFit="cover"
-                  quality={75}
-                  alt=""
+                  alt="Front end"
+                  width={1000}
+                  height={1000}
+                  quality={95}
                   priority={true}
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto",
+                    objectFit: "cover"
+                  }}
                 />
               </figure>
             </div>
