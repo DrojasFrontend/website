@@ -21,3 +21,5 @@ export { Heading } from "./UI/Heading";
 export { HeroTextImage } from "./UI/Heros/HeroTextImage";
 export { TextImageBlock } from "./UI/MediaBlock/TextImageBlock";
 export { ImageTextBlock } from "./UI/MediaBlock/ImageTextBlock";
+
+export { Preloader } from "./Preloader";

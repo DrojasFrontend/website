@@ -24,8 +24,7 @@ const Cards = () => {
           </Heading>
           <p>
             <FontWeightSelector>Transform design</FontWeightSelector> into web
-            pages with agility, quality and
-            <FontWeightSelector>high performance.</FontWeightSelector>
+            pages with agility, quality and <FontWeightSelector>high performance.</FontWeightSelector>
           </p>
         </div>
         <div className={cx("grid")}>
