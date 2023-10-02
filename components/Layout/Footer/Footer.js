@@ -15,7 +15,7 @@ import iconGithubFooter from "/public/icon-github-footer.svg";
 
 const Footer = () => {
   return (
-    <footer id="contact">
+    <footer className={cx("component")} id="contact">
       <div className={cx("wrapper")}>
         <Container>
           <div className={cx("top")}>

@@ -31,7 +31,7 @@ const HeroTextImage = () => {
   });
 
   return (
-    <section>
+    <section className={cx("component")}>
       <div className={cx("wrapper")}>
         <div className={cx("container")}>
           <div className={cx("grid")}>

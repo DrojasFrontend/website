@@ -9,7 +9,6 @@ import { motion } from "framer-motion";
 import { opacity, slideUp } from "@/utils/motion";
 
 const words = [
-  "Hola",
   "Hello",
   "Bonjour",
   "Ciao",
@@ -17,7 +16,7 @@ const words = [
   "やあ",
   "Hallå",
   "Guten tag",
-  "Hallo",
+  "Hola",
 ];
 
 export default function Index() {
